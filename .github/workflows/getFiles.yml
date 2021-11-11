@@ -185,6 +185,14 @@ jobs:
         with:
           name: build
           path: build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          CLEAN: true
+          FOLDER: build/docs/javadoc
+          TARGET_FOLDER: javadoc
   RunAllTestFiles:
     name: Test - ${{ matrix.class }}
     needs: [getAllTestFiles, compileJava, compileTestJava, processResources, processTestResources, assembleMainClasses, assembleTestClasses]

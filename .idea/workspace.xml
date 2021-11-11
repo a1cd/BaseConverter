@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17d3ec6c-b11c-475a-984a-94367a09e618" name="Changes" comment="Finished New Testing System">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Project_Template.test.iml" afterDir="false" />
+    <list default="true" id="17d3ec6c-b11c-475a-984a-94367a09e618" name="Changes" comment="Added Code And basic stuff">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/getFiles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/getFiles.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636645292446</updated>
       <workItem from="1636645296206" duration="485000" />
-      <workItem from="1636645994797" duration="1972000" />
+      <workItem from="1636645994797" duration="2924000" />
     </task>
     <task id="LOCAL-00001" summary="Finished New Testing System">
       <created>1636645600097</created>
@@ -104,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636647840560</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Code And basic stuff">
+      <created>1636647973015</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636647973015</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +129,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished New Testing System" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished New Testing System" />
+    <MESSAGE value="Added Code And basic stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Code And basic stuff" />
   </component>
 </project>
