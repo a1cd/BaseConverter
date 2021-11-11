@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17d3ec6c-b11c-475a-984a-94367a09e618" name="Changes" comment="Finished New Testing System">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/converted.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/converted10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/converted20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/converted30.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testvalues10_printout.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testvalues20_printout.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testvalues30_printout.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/values10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/values20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/values30.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/converted.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/converted10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/converted20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/converted30.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testvalues10_printout.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testvalues20_printout.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testvalues30_printout.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/values10.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/values20.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/values30.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NewClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseConverterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +64,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,6 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636645292446</updated>
       <workItem from="1636645296206" duration="485000" />
+      <workItem from="1636645994797" duration="537000" />
     </task>
     <task id="LOCAL-00001" summary="Finished New Testing System">
       <created>1636645600097</created>
@@ -77,6 +110,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished New Testing System" />
