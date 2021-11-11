@@ -1,4 +1,6 @@
-import java.io.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.net.URI;
 import java.util.Scanner;
 
 /**
@@ -12,10 +14,10 @@ public class BaseConverter {
     }
 
     public int strToInt(String num, String fromBase) {
-        return -1
+        return -1;
     }
     public int intToStr(String num, String toBase) {
-        return -1
+        return -1;
     }
 
     /**
@@ -24,15 +26,21 @@ public class BaseConverter {
      * output stream.
      */
     public void inputConvertPrintWrite() {
+        Scanner scanner;
         // create
         try {
-            File file = new File("values10");
-            Scanner scanner = new Scanner(file);
+            File file = new File("./src/main/resources/values10.dat");
+               scanner = new Scanner(file);
             while(scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
             }
-        } catch (Exception e) {
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        BaseConverter baseConverter = new BaseConverter();
+        baseConverter.inputConvertPrintWrite();
     }
 }

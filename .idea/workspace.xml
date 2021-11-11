@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17d3ec6c-b11c-475a-984a-94367a09e618" name="Changes" comment="Finished New Testing System">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/converted.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/converted10.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/converted20.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/converted30.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testvalues10_printout.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testvalues20_printout.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/testvalues30_printout.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/values10.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/values20.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/values30.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/converted.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/converted10.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/converted20.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/converted30.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testvalues10_printout.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testvalues20_printout.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testvalues30_printout.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/values10.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/values20.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/values30.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NewClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseConverterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BaseConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BaseConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +55,20 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="BaseConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaseConverter" />
+      <module name="Project_Template.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BaseConverter" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636645292446</updated>
       <workItem from="1636645296206" duration="485000" />
-      <workItem from="1636645994797" duration="537000" />
+      <workItem from="1636645994797" duration="1822000" />
     </task>
     <task id="LOCAL-00001" summary="Finished New Testing System">
       <created>1636645600097</created>
@@ -94,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636645600098</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished New Testing System">
+      <created>1636646631319</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636646631320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
