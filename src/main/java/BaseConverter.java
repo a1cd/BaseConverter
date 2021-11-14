@@ -7,10 +7,11 @@ import java.util.Scanner;
  * BaseConverter opens a data file, reads, converts numbers, prints
  * @version Thursday 11/18/2021
  * @author 24wilber
- * @extra a thing that does some stuff
- *        and some other stuff
  */
 public class BaseConverter {
+    /**
+     * the base converter constructor
+     */
     public BaseConverter() {
 
     }
@@ -70,7 +71,10 @@ public class BaseConverter {
             e.printStackTrace();
         }
     }
-
+    /**
+     * the main method
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         BaseConverter app = new BaseConverter();
         app.inputConvertPrintWrite();
