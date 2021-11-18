@@ -22,8 +22,8 @@ public class BaseConverter {
      * @return the num in decimal form
      */
     public int strToInt(String num, String fromBase) {
-        System.out.println('"'+fromBase+'"');
-        System.out.println(Integer.parseInt(fromBase.strip()));
+//        System.out.println('"'+fromBase+'"');
+//        System.out.println(Integer.parseInt(fromBase.strip()));
         return strToInt(num, Integer.parseInt(fromBase));
     }
     /**
@@ -34,9 +34,10 @@ public class BaseConverter {
     public int strToInt(String num, Integer fromBase) {
         int count = 0;
         for (int i = 0; i < num.length(); i++) {
-            int index=((i-num.length())*-1)-1;
-            count += baseChars.indexOf(num.charAt(index)) * ( (int) Math.pow(fromBase,i) );
+            int index = (num.length()-1)-i;
+            count += (baseChars.indexOf(num.charAt(index)) * ( (int) Math.pow(fromBase,i) ));
         }
+//        System.out.println("count = " + count);
         return count;
     }
 
@@ -48,17 +49,26 @@ public class BaseConverter {
     public String intToStr(int num, String toBase) {
         return intToStr(num, Integer.parseInt(toBase));
     }
+
+    @SuppressWarnings("RedundantSuppression") // for BaseConverter.java#59:11
     public String intToStr(int num, int toBase) {
         int currentTotal = num;
         String out = "";
         int neededChars = 0;
         //noinspection StatementWithEmptyBody
-        for (neededChars++; Math.pow(toBase,neededChars)>num;) {}
+        while (Math.pow(toBase,neededChars+1)<num) {neededChars++;}
+//        System.out.println("needed chars =>> " + neededChars);
         for (int cChar = neededChars; cChar >= 0; cChar--) {
-            for (int i = toBase; i*Math.pow(toBase,cChar) >= currentTotal; i--) {
-                currentTotal=-i*((int) Math.pow(toBase, cChar));
+//            System.out.println("cChar =>> " + cChar);
+            for (int i = toBase; i >= 0; i--) {
+                if (i*Math.pow(toBase, cChar) > currentTotal) continue;
+                currentTotal -= i*((int) Math.pow(toBase, cChar));
+//                System.out.println("i =>> " + i);
+//                System.out.println("eval value -<< " + (i*Math.pow(toBase, cChar)));
+//                System.out.println("Current BaseChar -<< " + baseChars.get(i));
                 //noinspection StringConcatenationInLoop
                 out = out + baseChars.get(i);
+                break;
             }
         }
         return out;
@@ -70,11 +80,21 @@ public class BaseConverter {
      * output stream.
      */
     public void inputConvertPrintWrite() {
+        File fileIn = new File("./src/main/resources/values10.dat"); // just a convienence
+        File fileOut = new File("./src/main/resources/converted.dat"); // correct file
+        this.inputConvertPrintWrite(fileIn, fileOut);
+    }
+    /**
+     * onpens the file stream, inputs data on line at a time, converts,
+     * prints the result to the console window and writes data to the
+     * output stream.
+     * @param fileIn the input file
+     * @param fileOut the output file
+     */
+    public void inputConvertPrintWrite(File fileIn, File fileOut) {
         Scanner scanner;
         // create
         try {
-            File fileIn = new File("./src/main/resources/values10.dat");
-            File fileOut = new File("./src/main/resources/converted10.dat");
             scanner = new Scanner(fileIn);
             PrintWriter printWriter = new PrintWriter(fileOut);
             while(scanner.hasNextLine()) {
@@ -90,8 +110,9 @@ public class BaseConverter {
                     continue;
                 }
                 String converted = intToStr(strToInt(currentArgs[0], currentArgs[1]), currentArgs[2]);
-                printWriter.write(converted+'\t'+currentArgs[1]+'\t'+currentArgs[2]);
+                printWriter.println(currentArgs[0]+'\t'+currentArgs[1]+'\t'+converted+'\t'+currentArgs[2]);
             }
+            printWriter.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
