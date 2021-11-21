@@ -49,9 +49,6 @@ class BaseConverterTest {
             }
             answerScanner.close();
 
-            System.out.println("\n\n\n\nnow\n\n\n\n");
-            System.out.println(answerKey);
-
             assertEquals(answerKey, fullText);
         } catch (Exception e){
             e.printStackTrace();

@@ -43,6 +43,7 @@ public class BaseConverter {
     }
 
     /**
+     * convert int to string
      * @param num unconverted number
      * @param toBase the base to convert the number to
      * @return the converted number
@@ -51,38 +52,53 @@ public class BaseConverter {
         return intToStr(num, Integer.parseInt(toBase));
     }
 
-    @SuppressWarnings("RedundantSuppression") // for BaseConverter.java#59:11
+    /**
+     * convert int in base 10 to a base from 2 to 16 and returning it as a string
+     * @param num unconverted number
+     * @param toBase the base to convert the number to
+     * @return the converted number
+     */
+    public String intToStr(int num, int toBase) {
+        if (num == 0) return "0"; // return 0 if it is 0
+        int currentTotal = num; // i just dont like modifying argument variables
+        String out = "";
+        // the following is basically a copy of the code on the screen with slight modifications
+        while (currentTotal > 0) {
+            //noinspection StringConcatenationInLoop
+            out = baseChars.get(currentTotal % toBase) + out;
+            currentTotal /= toBase;
+        }
+        return out;
+    }
+    // this was my old code. I did not know how much it was alta vista style.
+    /*
     public String intToStr(int num, int toBase) {
         int currentTotal = num;
         String out = "";
         int neededChars = 0;
-        //noinspection StatementWithEmptyBody
         while (Math.pow(toBase,neededChars+1)<num) {neededChars++;}
-//        System.out.println("needed chars =>> " + neededChars);
         for (int cChar = neededChars; cChar >= 0; cChar--) {
-//            System.out.println("cChar =>> " + cChar);
             for (int i = toBase; i >= 0; i--) {
                 if (i*Math.pow(toBase, cChar) > currentTotal) continue;
                 currentTotal -= i*((int) Math.pow(toBase, cChar));
-//                System.out.println("i =>> " + i);
-//                System.out.println("eval value -<< " + (i*Math.pow(toBase, cChar)));
-//                System.out.println("Current BaseChar -<< " + baseChars.get(i));
                 //noinspection StringConcatenationInLoop
-                out = out + baseChars.get(i);
+                out += baseChars.get(i);
                 break;
             }
         }
         return out;
     }
+    */
 
     /**
-     * onpens the file stream, inputs data on line at a time, converts,
+     * opens the file stream, inputs data on line at a time, converts,
      * prints the result to the console window and writes data to the
      * output stream.
+     * this is a convenience method
      */
     public void inputConvertPrintWrite() {
-        File fileIn = new File("./src/main/resources/values10.dat"); // just a convienence
-        File fileOut = new File("./src/main/resources/converted.dat"); // correct file
+        File fileIn = new File("./src/main/resources/values10.dat");
+        File fileOut = new File("./src/main/resources/converted.dat");
         this.inputConvertPrintWrite(fileIn, fileOut);
     }
     /**
@@ -113,9 +129,9 @@ public class BaseConverter {
                 String converted = intToStr(strToInt(currentArgs[0], currentArgs[1]), currentArgs[2]);
                 printWriter.println(currentArgs[0]+'\t'+currentArgs[1]+'\t'+converted+'\t'+currentArgs[2]);
             }
-            printWriter.close();
+
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // may miss code coverage
         }
     }
     /**
