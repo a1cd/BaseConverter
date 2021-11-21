@@ -18,6 +18,9 @@ public class BaseConverter {
     }
     static List<Character> baseChars = List.of('0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F');
     /**
+     * converts string number in any base from 2 to 16 to a base 10 int
+     *
+     * this is a convenience method
      * @param num the number from which to convert to a decimal value
      * @param fromBase the base that num is in
      * @return the num in decimal form
@@ -28,6 +31,9 @@ public class BaseConverter {
         return strToInt(num, Integer.parseInt(fromBase));
     }
     /**
+     * converts string number in any base from 2 to 16 to a base 10 int
+     *
+     * this is a convenience method
      * @param num the number from which to convert to a decimal value
      * @param fromBase the base that num is in
      * @return the num in decimal form
@@ -131,7 +137,6 @@ public class BaseConverter {
                 printWriter.println(currentArgs[0]+'\t'+currentArgs[1]+'\t'+converted+'\t'+currentArgs[2]);
             }
             printWriter.close();
-
         } catch (FileNotFoundException e) {
             e.printStackTrace(); // may miss code coverage
         }
