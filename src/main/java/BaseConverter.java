@@ -119,7 +119,7 @@ public class BaseConverter {
                 String[] currentArgs = currentLine.split("\t");
                 int fromBase = Integer.parseInt(currentArgs[1]);
                 int toBase = Integer.parseInt(currentArgs[2]);
-                if (fromBase>16 || fromBase<2) {
+                if (fromBase > 16 || fromBase < 2) {
                     System.out.println("invalid fromBase value");
                     continue;
                 } else if (toBase > 16 || toBase < 2) {
@@ -127,8 +127,10 @@ public class BaseConverter {
                     continue;
                 }
                 String converted = intToStr(strToInt(currentArgs[0], currentArgs[1]), currentArgs[2]);
+                System.out.println(currentArgs[0]+"(base "+currentArgs[1]+") -->> "+converted+"(base "+currentArgs[2]+")");
                 printWriter.println(currentArgs[0]+'\t'+currentArgs[1]+'\t'+converted+'\t'+currentArgs[2]);
             }
+            printWriter.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace(); // may miss code coverage
