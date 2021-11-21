@@ -111,7 +111,7 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code>void</code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#inputConvertPrintWrite()">inputConvertPrintWrite</a></span>()</code></div>
 <div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
-<div class="block">onpens the file stream, inputs data on line at a time, converts,
+<div class="block">opens the file stream, inputs data on line at a time, converts,
  prints the result to the console window and writes data to the
  output stream.</div>
 </div>
@@ -126,11 +126,15 @@ loadScripts(document, 'script');</script>
 <div class="col-first even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#intToStr(int,int)">intToStr</a></span>&#8203;(int&nbsp;num,
  int&nbsp;toBase)</code></div>
-<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
+<div class="block">convert int in base 10 to a base from 2 to 16 and returning it as a string</div>
+</div>
 <div class="col-first odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></code></div>
 <div class="col-second odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#intToStr(int,java.lang.String)">intToStr</a></span>&#8203;(int&nbsp;num,
  <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;toBase)</code></div>
-<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">&nbsp;</div>
+<div class="col-last odd-row-color method-summary-table-tab2 method-summary-table-tab4 method-summary-table">
+<div class="block">convert int to string</div>
+</div>
 <div class="col-first even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code>static void</code></div>
 <div class="col-second even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table"><code><span class="member-name-link"><a href="#main(java.lang.String%5B%5D)">main</a></span>&#8203;(<a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>[]&nbsp;args)</code></div>
 <div class="col-last even-row-color method-summary-table-tab1 method-summary-table-tab4 method-summary-table">
@@ -209,6 +213,7 @@ loadScripts(document, 'script');</script>
 <h3>intToStr</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">intToStr</span>&#8203;<span class="parameters">(int&nbsp;num,
  <a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;toBase)</span></div>
+<div class="block">convert int to string</div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>num</code> - unconverted number</dd>
@@ -223,15 +228,24 @@ loadScripts(document, 'script');</script>
 <h3>intToStr</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a></span>&nbsp;<span class="element-name">intToStr</span>&#8203;<span class="parameters">(int&nbsp;num,
  int&nbsp;toBase)</span></div>
+<div class="block">convert int in base 10 to a base from 2 to 16 and returning it as a string</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>num</code> - unconverted number</dd>
+<dd><code>toBase</code> - the base to convert the number to</dd>
+<dt>Returns:</dt>
+<dd>the converted number</dd>
+</dl>
 </section>
 </li>
 <li>
 <section class="detail" id="inputConvertPrintWrite()">
 <h3>inputConvertPrintWrite</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">inputConvertPrintWrite</span>()</div>
-<div class="block">onpens the file stream, inputs data on line at a time, converts,
+<div class="block">opens the file stream, inputs data on line at a time, converts,
  prints the result to the console window and writes data to the
- output stream.</div>
+ output stream.
+ this is a convenience method</div>
 </section>
 </li>
 <li>
