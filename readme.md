@@ -3,6 +3,4 @@
 See Javadoc [here](https://a1cd.github.io/BaseConverter/)
 
 # Template AP CS Project
-All in one, automatic testing, gradle built
-in, tests and resources, gitignore, github actions, and soon to have auto 
-javadoc alerts.
+Write a class called BaseConverter that prints a conversion for a variety of numbers as specified by a data file. The conversion will always be from the range of base-2 to base-16 numbers to a new number, also in the range base-2 throughbase-16.
