@@ -130,10 +130,10 @@ public class BaseConverter {
                 int fromBase = Integer.parseInt(currentArgs[1]);
                 int toBase = Integer.parseInt(currentArgs[2]);
                 if (fromBase > 16 || fromBase < 2) {
-                    System.out.println("invalid fromBase value");
+                    System.out.println("Invalid input base "+fromBase);
                     continue;
                 } else if (toBase > 16 || toBase < 2) {
-                    System.out.println("invalid toBase value");
+                    System.out.println("Invalid output base "+toBase);
                     continue;
                 }
                 String converted = intToStr(strToInt(currentArgs[0], currentArgs[1]), currentArgs[2]);
