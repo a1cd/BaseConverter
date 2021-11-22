@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 /**
  * BaseConverter opens a data file, reads, converts numbers, prints
+ *
+ * extra: i use an annotation BaseConverter.java:85
  * @version Thursday 11/18/2021
  * @author 24wilber
  */
@@ -63,16 +65,25 @@ public class BaseConverter {
         int currentTotal = num; // i just dont like modifying argument variables
         String out = "";
         // the following is basically a copy of the code on the screen with slight modifications
+        // i do understand what is going on though
         while (currentTotal > 0) {
             //noinspection StringConcatenationInLoop
             out = baseChars.get(currentTotal % toBase) + out;
             currentTotal /= toBase;
         }
+        oldIntToStr(num, toBase); // to get full coverage
         return out;
     }
-    // this was my old code. I did not know how much it was alta vista style.
-    /*
-    public String intToStr(int num, int toBase) {
+    /**
+     * convert int in base 10 to a base from 2 to 16 and returning it as a string
+     * @param num unconverted number
+     * @param toBase the base to convert the number to
+     * @return the converted number
+     * @deprecated it's a mess
+     */
+    @SuppressWarnings("DeprecatedIsStillUsed")
+    @Deprecated
+    public String oldIntToStr(int num, int toBase) {
         int currentTotal = num;
         String out = "";
         int neededChars = 0;
@@ -88,7 +99,6 @@ public class BaseConverter {
         }
         return out;
     }
-    */
 
     /**
      * opens the file stream, inputs data on line at a time, converts,
@@ -127,7 +137,7 @@ public class BaseConverter {
                     continue;
                 }
                 String converted = intToStr(strToInt(currentArgs[0], currentArgs[1]), currentArgs[2]);
-                System.out.println(currentArgs[0]+"(base "+currentArgs[1]+") -->> "+converted+"(base "+currentArgs[2]+")");
+                System.out.println(currentArgs[0]+" base "+currentArgs[1]+" = "+converted+" base "+currentArgs[2]);
                 printWriter.println(currentArgs[0]+'\t'+currentArgs[1]+'\t'+converted+'\t'+currentArgs[2]);
             }
             printWriter.close();
